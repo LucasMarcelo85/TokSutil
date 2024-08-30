@@ -3798,5 +3798,62 @@ input, select, textarea {
 			
 			
 		}
+		/* Responsividade do Iframe do Google Maps */
+.map-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção de 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border: 1px solid #ddd; /* Adiciona uma borda opcional ao redor do mapa */
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsividade da Imagem */
+.image-responsive {
+    max-width: 100%;
+    height: auto;
+    text-align: center; /* Centraliza a imagem */
+}
+
+.image-responsive img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+/* Estilo para a lista de características */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espaçamento entre os itens */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    flex: 1 1 200px; /* Ajusta o tamanho mínimo dos itens e permite que eles cresçam */
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o texto e a imagem dentro do item */
+}
+
+.features img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do item */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do item */
+}
+
+.features h3 {
+    margin-top: 0.5rem; /* Espaçamento acima do título */
+}
+
+
 
 		
